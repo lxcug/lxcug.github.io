@@ -219,14 +219,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>13k</span>
+              <span>14k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>12 分钟</span>
+              <span>13 分钟</span>
             </span>
 
         </div>
@@ -325,13 +325,27 @@ max(dp[i][j-1], \ dp[i-1][j]) \ \ \ \ \ \ \
 </ul>
 <p>写出状态转移方程</p>
 <script type="math/tex; mode=display">
-dp[i] = max(dp[i-2] + nums[i], dp[i-1])</script><p>边界条件（房屋数大于等于2时）</p>
+dp[i] = max(dp[i-2] + nums[i], dp[i-1])\ \ \ \ i < nums.size()</script><p>边界条件（房屋数大于等于2时）</p>
 <script type="math/tex; mode=display">
 \begin{cases}
 dp[0] = nums[0]\\
 dp[1] = max(nums[0], nums[1])
 \end{cases}</script><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">rob</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums.size() == <span class="number">1</span>)</span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>];</span><br><span class="line">        <span class="function"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; <span class="title">dp</span><span class="params">(nums.size())</span></span>;</span><br><span class="line">        dp[<span class="number">0</span>] = nums[<span class="number">0</span>];</span><br><span class="line">        dp[<span class="number">1</span>] = max(nums[<span class="number">0</span>], nums[<span class="number">1</span>]);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; nums.size(); i++) &#123;</span><br><span class="line">            dp[i] = max(dp[i<span class="number">-2</span>] + nums[i], dp[i<span class="number">-1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> *max_element(dp.begin(), dp.end());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <h3 id="213-打家劫舍II"><a href="#213-打家劫舍II" class="headerlink" title="213. 打家劫舍II"></a>213. 打家劫舍II</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">你是一个专业的小偷，计划偷窃沿街的房屋，每间房内都藏有一定的现金。这个地方所有的房屋都 围成一圈 ，这意味着第一个房屋和最后一个房屋是紧挨着的。同时，相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。</span><br><span class="line">给定一个代表每个房屋存放金额的非负整数数组，计算你 在不触动警报装置的情况下 ，能够偷窃到的最高金额。</span><br></pre></td></tr></table></figure>
+<p>创建两个数组dp1, dp2<br>dp1偷第一个房屋，dp2不偷第一个房屋，由此得到边界条件</p>
+<script type="math/tex; mode=display">
+\begin{cases}
+dp1[0] = dp1[0] = nums[0]\\
+dp2[0] = 0, dp[1] = nums[1]
+\end{cases}</script><p>状态转移方程</p>
+<script type="math/tex; mode=display">
+dp1[i] = max(dp1[i-2] + nums[i], dp1[i-1])\ \ \ \ i < nums.size()-1\\
+dp2[i] = max(dp2[i-2] + nums[i], dp2[i-1])\ \ \ \ i < nums.size()-1</script><p>在最后一间房屋时(int sz = nums.size()-1)</p>
+<ul>
+<li>dp1偷了第一间房屋所以不能偷最后一间所以$dp1[sz-1] = dp1[sz-2]$</li>
+<li>dp2没偷第一间房屋所以$dp2[sz-1] = max(dp2[sz-3]+nums[sz-1], dp2[sz-2])$</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">rob</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(nums.size() == <span class="number">1</span>)</span><br><span class="line">            <span class="keyword">return</span> nums[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(nums.size() == <span class="number">2</span>)</span><br><span class="line">            <span class="keyword">return</span> max(nums[<span class="number">0</span>], nums[<span class="number">1</span>]);</span><br><span class="line">        vector&lt;int&gt; dp1(nums.size()), dp2(nums.size());</span><br><span class="line">        dp1[<span class="number">0</span>] = nums[<span class="number">0</span>];  <span class="comment">// dp1偷第一个房屋</span></span><br><span class="line">        dp1[<span class="number">1</span>] = nums[<span class="number">0</span>];</span><br><span class="line">        dp2[<span class="number">0</span>] = <span class="number">0</span>;   <span class="comment">// dp2不偷第一个房屋</span></span><br><span class="line">        dp2[<span class="number">1</span>] = nums[<span class="number">1</span>];</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">2</span>; i &lt; nums.size()<span class="number">-1</span>; i++) &#123;</span><br><span class="line">            dp1[i] = max(dp1[i<span class="number">-2</span>] + nums[i], dp1[i<span class="number">-1</span>]);</span><br><span class="line">            dp2[i] = max(dp2[i<span class="number">-2</span>] + nums[i], dp2[i<span class="number">-1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        dp1[nums.size()<span class="number">-1</span>] = max(dp1[nums.size()<span class="number">-2</span>], dp1[nums.size()<span class="number">-3</span>]);</span><br><span class="line">        dp2[nums.size()<span class="number">-1</span>] = max(dp2[nums.size()<span class="number">-3</span>]+nums[nums.size()<span class="number">-1</span>], dp2[nums.size()<span class="number">-2</span>]);</span><br><span class="line">        <span class="keyword">return</span> max(dp1[nums.size()<span class="number">-1</span>], dp2[nums.size()<span class="number">-1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -937,13 +951,13 @@ dp[1] = max(nums[0], nums[1])
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">25k</span>
+    <span title="站点总字数">26k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">23 分钟</span>
+    <span title="站点阅读时长">24 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
