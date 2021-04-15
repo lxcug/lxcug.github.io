@@ -290,7 +290,7 @@
 <h3 id="定义列表"><a href="#定义列表" class="headerlink" title="定义列表"></a>定义列表</h3><p>定义列表是列表项&lt;dt&gt;和注释&lt;dd&GT;的组合</p>
 <h3 id="lt-div-gt-确定文档结构"><a href="#lt-div-gt-确定文档结构" class="headerlink" title="&lt;div&gt;确定文档结构"></a>&lt;div&gt;确定文档结构</h3><p>&lt;div&gt;的属性有id、class，用于区分元素标识和为以后样式和脚本准备</p>
 <h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><h3 id="lt-a-gt-标签"><a href="#lt-a-gt-标签" class="headerlink" title="&lt;a&gt;标签"></a>&lt;a&gt;标签</h3><p>&lt;a&gt;的属性有href、id和name<br>href是链接，id和name可以创建一个网页内部的书签，有的浏览器支持id有的支持name，最好都用上<br>创建指向书签的超链接示例  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a id&#x3D;&quot;label&quot; name&#x3D;&quot;label&quot;&gt;&lt;&#x2F;a&gt;</span><br><span class="line">&lt;a href&#x3D;&quot;#label&quot;&gt;指向label&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;a id&#x3D;&quot;label&quot; name&#x3D;&quot;label&quot;&gt;&lt;&#x2F;a&gt;</span><br><span class="line">&lt;a href&#x3D;&quot;#label&quot;&gt;指向label&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="多媒体"><a href="#多媒体" class="headerlink" title="多媒体"></a>多媒体</h2><h3 id="lt-img-gt-标签"><a href="#lt-img-gt-标签" class="headerlink" title="&lt;img&gt;标签"></a>&lt;img&gt;标签</h3><p>&lt;img&gt;是空元素，常用属性有  </p>
 <ul>
 <li>alt 图片加载不出时的替代文本  </li>
@@ -337,7 +337,7 @@
 <li>action 提交表单时，向何处发送数据</li>
 <li>method 定义如何发送表单数据</li>
 </ul>
-<h5 id="action属性"><a href="#action属性" class="headerlink" title="action属性"></a>action属性</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action&#x3D;&quot;index.html&quot; method&#x3D;&quot;get&quot;&gt;</span><br><span class="line">    &lt;span&gt;account:&lt;&#x2F;span&gt;</span><br><span class="line">    &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;name&quot; name&#x3D;&quot;name&quot;&#x2F;&gt;&lt;br&#x2F;&gt;</span><br><span class="line">    &lt;span&gt;password:&lt;&#x2F;span&gt;</span><br><span class="line">    &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;unit&quot; name&#x3D;&quot;unit&quot;&#x2F;&gt;&lt;br&#x2F;&gt;</span><br><span class="line">    &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;sign in&quot;&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;form&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="action属性"><a href="#action属性" class="headerlink" title="action属性"></a>action属性</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;form action&#x3D;&quot;index.html&quot; method&#x3D;&quot;get&quot;&gt;</span><br><span class="line">    &lt;span&gt;account:&lt;&#x2F;span&gt;</span><br><span class="line">    &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;name&quot; name&#x3D;&quot;name&quot;&#x2F;&gt;&lt;br&#x2F;&gt;</span><br><span class="line">    &lt;span&gt;password:&lt;&#x2F;span&gt;</span><br><span class="line">    &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;unit&quot; name&#x3D;&quot;unit&quot;&#x2F;&gt;&lt;br&#x2F;&gt;</span><br><span class="line">    &lt;input type&#x3D;&quot;submit&quot; value&#x3D;&quot;sign in&quot;&#x2F;&gt;</span><br><span class="line">&lt;&#x2F;form&gt;</span><br></pre></td></tr></table></figure>
 <p>如上面代码所示，表单会提交到index.html页面</p>
 <h5 id="methond属性"><a href="#methond属性" class="headerlink" title="methond属性"></a>methond属性</h5><p>属性值有get和post两种<br>使用get方法不能发送比较多的表单数据，URL的长度限制在8192个字符内<br>如果要手机用户名和密码，银行卡或其他保密信息，post方法会比get方法安全，但容易被黑客截取</p>
 <h3 id="表单域"><a href="#表单域" class="headerlink" title="表单域"></a>表单域</h3><h4 id="表单域标签"><a href="#表单域标签" class="headerlink" title="表单域标签"></a>表单域标签</h4><ul>
@@ -613,13 +613,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">27k</span>
+    <span title="站点总字数">25k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">24 分钟</span>
+    <span title="站点阅读时长">23 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
