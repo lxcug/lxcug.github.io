@@ -6,7 +6,7 @@
   <link href="http://lxcug.github.io/atom.xml" rel="self"/>
   
   <link href="http://lxcug.github.io/"/>
-  <updated>2022-02-20T12:43:05.047Z</updated>
+  <updated>2022-02-20T12:51:22.183Z</updated>
   <id>http://lxcug.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>c++学习笔记</title>
+    <title>c++知识重构</title>
     <link href="http://lxcug.github.io/2022/02/10/c++%E7%9F%A5%E8%AF%86%E9%87%8D%E6%9E%84/"/>
     <id>http://lxcug.github.io/2022/02/10/c++%E7%9F%A5%E8%AF%86%E9%87%8D%E6%9E%84/</id>
     <published>2022-02-10T15:31:18.000Z</published>
-    <updated>2022-02-20T12:43:05.047Z</updated>
+    <updated>2022-02-20T12:51:22.183Z</updated>
     
     
       
@@ -38,11 +38,11 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://lxcug.github.io/2022/02/10/The%20application%20of%20deep%20learning%20in%20creating%20acoustic%20invisible%20cloak/"/>
-    <id>http://lxcug.github.io/2022/02/10/The%20application%20of%20deep%20learning%20in%20creating%20acoustic%20invisible%20cloak/</id>
-    <published>2022-02-10T06:34:53.157Z</published>
-    <updated>2022-02-20T06:34:17.085Z</updated>
+    <title>The application of deep learning in creating acoustic invisible cloak</title>
+    <link href="http://lxcug.github.io/2022/02/07/The%20application%20of%20deep%20learning%20in%20creating%20acoustic%20invisible%20cloak/"/>
+    <id>http://lxcug.github.io/2022/02/07/The%20application%20of%20deep%20learning%20in%20creating%20acoustic%20invisible%20cloak/</id>
+    <published>2022-02-07T15:31:18.000Z</published>
+    <updated>2022-02-20T12:52:15.503Z</updated>
     
     
       
@@ -50,48 +50,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;The-application-of-deep-learning-in-creating-acoustic-invisible-cloak&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://lxcug.github.io/2022/01/25/webServer/"/>
-    <id>http://lxcug.github.io/2022/01/25/webServer/</id>
-    <published>2022-01-25T10:32:10.327Z</published>
-    <updated>2022-01-25T10:32:10.328Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;webServer开发中遇到的问题&quot;&gt;&lt;a href=&quot;#webServer开发中遇到的问题&quot; class=&quot;headerlink&quot; title=&quot;webServer开发中遇到的问题&quot;&gt;&lt;/a&gt;webServer开发中遇到的问题&lt;/h1&gt;&lt;h2</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://lxcug.github.io/2021/12/30/TCPIP%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
-    <id>http://lxcug.github.io/2021/12/30/TCPIP%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</id>
-    <published>2021-12-30T04:39:16.142Z</published>
-    <updated>2021-12-30T04:39:16.142Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;TCP-IP网络编程&quot;&gt;&lt;a href=&quot;#TCP-IP网络编程&quot; class=&quot;headerlink&quot;</summary>
         
       
     
