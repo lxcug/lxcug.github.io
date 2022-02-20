@@ -6,7 +6,7 @@
   <link href="http://lxcug.github.io/atom.xml" rel="self"/>
   
   <link href="http://lxcug.github.io/"/>
-  <updated>2021-11-17T10:54:31.757Z</updated>
+  <updated>2022-02-20T12:43:05.047Z</updated>
   <id>http://lxcug.github.io/</id>
   
   <author>
@@ -15,6 +15,90 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>c++学习笔记</title>
+    <link href="http://lxcug.github.io/2022/02/10/c++%E7%9F%A5%E8%AF%86%E9%87%8D%E6%9E%84/"/>
+    <id>http://lxcug.github.io/2022/02/10/c++%E7%9F%A5%E8%AF%86%E9%87%8D%E6%9E%84/</id>
+    <published>2022-02-10T15:31:18.000Z</published>
+    <updated>2022-02-20T12:43:05.047Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;c-知识重构&quot;&gt;&lt;a href=&quot;#c-知识重构&quot; class=&quot;headerlink&quot; title=&quot;c++知识重构&quot;&gt;&lt;/a&gt;c++知识重构&lt;/h1&gt;&lt;h2 id=&quot;const&quot;&gt;&lt;a href=&quot;#const&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://lxcug.github.io/2022/02/10/The%20application%20of%20deep%20learning%20in%20creating%20acoustic%20invisible%20cloak/"/>
+    <id>http://lxcug.github.io/2022/02/10/The%20application%20of%20deep%20learning%20in%20creating%20acoustic%20invisible%20cloak/</id>
+    <published>2022-02-10T06:34:53.157Z</published>
+    <updated>2022-02-20T06:34:17.085Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;The-application-of-deep-learning-in-creating-acoustic-invisible-cloak&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://lxcug.github.io/2022/01/25/webServer/"/>
+    <id>http://lxcug.github.io/2022/01/25/webServer/</id>
+    <published>2022-01-25T10:32:10.327Z</published>
+    <updated>2022-01-25T10:32:10.328Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;webServer开发中遇到的问题&quot;&gt;&lt;a href=&quot;#webServer开发中遇到的问题&quot; class=&quot;headerlink&quot; title=&quot;webServer开发中遇到的问题&quot;&gt;&lt;/a&gt;webServer开发中遇到的问题&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://lxcug.github.io/2021/12/30/TCPIP%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/"/>
+    <id>http://lxcug.github.io/2021/12/30/TCPIP%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</id>
+    <published>2021-12-30T04:39:16.142Z</published>
+    <updated>2021-12-30T04:39:16.142Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;TCP-IP网络编程&quot;&gt;&lt;a href=&quot;#TCP-IP网络编程&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>堆排序</title>
@@ -50,27 +134,6 @@
         
         
     <summary type="html">&lt;h3 id=&quot;1765-地图中的最高点&quot;&gt;&lt;a href=&quot;#1765-地图中的最高点&quot; class=&quot;headerlink&quot; title=&quot;1765. 地图中的最高点&quot;&gt;&lt;/a&gt;1765. 地图中的最高点&lt;/h3&gt;&lt;figure class=&quot;highlight</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>c++学习笔记</title>
-    <link href="http://lxcug.github.io/2021/03/17/c++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://lxcug.github.io/2021/03/17/c++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
-    <published>2021-03-17T15:31:18.000Z</published>
-    <updated>2021-03-17T15:39:28.983Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;class&quot;&gt;&lt;a href=&quot;#class&quot; class=&quot;headerlink&quot; title=&quot;class&quot;&gt;&lt;/a&gt;class&lt;/h1&gt;&lt;h2 id=&quot;基类与派生类&quot;&gt;&lt;a href=&quot;#基类与派生类&quot; class=&quot;headerlink&quot;</summary>
         
       
     
