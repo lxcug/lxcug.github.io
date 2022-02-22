@@ -249,7 +249,7 @@
 </ul>
 <p>所以socket编程中buf[strLen] = 0;截断了字符串</p>
 <h3 id="char-和char"><a href="#char-和char" class="headerlink" title="char []和char *"></a>char []和char *</h3><p><img src="https://s2.loli.net/2022/02/22/m7tNbVMO9Hw6yIl.png" alt="image-20220118141955199"></p>
-<p><img src="D:\2 download\1 pics\IMG_091.PNG" style="zoom:30%;" /></p>
+<p><img src="https://s2.loli.net/2022/02/22/JRSUgXixYEN5v2t.png" alt="IMG_091-16455377282262" style="zoom:25%;" /></p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">char</span> strArray[] = <span class="string">&quot;Hello, world!&quot;</span>;</span><br><span class="line"><span class="keyword">char</span> *strPtr = <span class="string">&quot;Hello, world!&quot;</span>;</span><br><span class="line"><span class="comment">// strArray的地址固定，所以strArray不可变，但是strArray[i]可变</span></span><br><span class="line"><span class="comment">// strPtr是指针，指向对象可变，即strPtr可变，但是strPtr[i]不可变，因为&quot;Hello, world!&quot;是字符串常量存储在静态存储区，如果把strPtr指向strArray，则可以改变strPtr[i]</span></span><br></pre></td></tr></table></figure>
 <h3 id="strcpy函数"><a href="#strcpy函数" class="headerlink" title="strcpy函数"></a>strcpy函数</h3><p>函数原型</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">char</span> * __cdecl <span class="title">strcpy</span><span class="params">(<span class="keyword">char</span> * __restrict__ _Dest,<span class="keyword">const</span> <span class="keyword">char</span> * __restrict__ _Source)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">while</span>((*(_Dest++)=*(_Source++))!=<span class="number">0</span>);</span><br><span class="line">	<span class="keyword">return</span> _Dest;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// __restrict__表示变量只能通过该指针进行修改</span></span><br></pre></td></tr></table></figure>
@@ -354,17 +354,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="The-application-of-deep-learning-in-creating-acoustic-invisible-cloak"><a href="#The-application-of-deep-learning-in-creating-acoustic-invisible-cloak" class="headerlink" title="The application of deep learning in creating acoustic invisible cloak"></a>The application of deep learning in creating acoustic invisible cloak</h1><h2 id="1-data-set"><a href="#1-data-set" class="headerlink" title="1. data set"></a>1. data set</h2><p><img src="https://raw.githubusercontent.com/lxcug/image/master/img/image-20220209183117130.png" alt="image-20220209183117730"></p>
+          <h1 id="The-application-of-deep-learning-in-creating-acoustic-invisible-cloak"><a href="#The-application-of-deep-learning-in-creating-acoustic-invisible-cloak" class="headerlink" title="The application of deep learning in creating acoustic invisible cloak"></a>The application of deep learning in creating acoustic invisible cloak</h1><h2 id="1-data-set"><a href="#1-data-set" class="headerlink" title="1. data set"></a>1. data set</h2><p><img src="https://s2.loli.net/2022/02/22/KV4W6yGnIATUrBx.png" alt="image-20220209183117130"></p>
 <script type="math/tex; mode=display">
 input\ data:\ 一个二维4层材料的参数\ D = [a_1,\ a_2,\ a_3,\ a_4,\ \kappa_1, \ \kappa_2, \ \kappa_3,\ \kappa_4]\\
 其中a_i和k_i为第i层材料的半径和弹性模量\\
 output\ data:\ R = [r_1,\cdots,\ r_{100}]\\
 r_1-r_{100}覆盖了标准化的频率空间,0 \le k_0a \le \pi,其中k_0=\frac{2\pi}{\lambda}为声波数\\
 量化隐身性能\ r_i = \frac{\sigma_{cloak}}{\sigma_{object}},\ r_i为该normalized频率下的量化隐身性能\\
-r_i通过转移矩阵法TMM(Transfer\ Matrix\ Method)计算得到</script><p><img src="https://raw.githubusercontent.com/lxcug/image/master/img/image-20220209210248982.png" alt="image-20220209210248982" style="zoom:67%;" /></p>
-<h2 id="2-模型设计"><a href="#2-模型设计" class="headerlink" title="2. 模型设计"></a>2. 模型设计</h2><p><img src="https://raw.githubusercontent.com/lxcug/image/master/img/image-20220209192014276.png" alt="image-20220209192014276" style="zoom:67%;" /></p>
+r_i通过转移矩阵法TMM(Transfer\ Matrix\ Method)计算得到</script><h2 id="2-模型设计"><a href="#2-模型设计" class="headerlink" title="2. 模型设计"></a>2. 模型设计</h2><p><img src="https://s2.loli.net/2022/02/22/bDQq5xBg72SoF1u.png" alt="image-20220209210248982"></p>
+<p><img src="https://s2.loli.net/2022/02/22/PNESK9oiJjYMHhQ.png" alt="image-20220209192014276"></p>
 <h3 id="Forward-modeling-network-decoder"><a href="#Forward-modeling-network-decoder" class="headerlink" title="Forward-modeling network(decoder)"></a>Forward-modeling network(decoder)</h3><p>decoder为4层的全连接网络，每层的节点数分别为500、500、400、300</p>
-<h3 id="Hyperparameter"><a href="#Hyperparameter" class="headerlink" title="Hyperparameter"></a>Hyperparameter</h3><p><img src="https://raw.githubusercontent.com/lxcug/image/master/img/image-20220209201223752.png" alt="image-20220209201223752" style="zoom:67%;" /></p>
+<h3 id="Hyperparameter"><a href="#Hyperparameter" class="headerlink" title="Hyperparameter"></a>Hyperparameter</h3><p><img src="https://s2.loli.net/2022/02/22/fVSKE6NwnQrieaO.png" alt="image-20220209201223752"></p>
 <h2 id="3-传输矩阵法TMM"><a href="#3-传输矩阵法TMM" class="headerlink" title="3. 传输矩阵法TMM"></a>3. 传输矩阵法TMM</h2><p>传输矩阵法用于计算材料的透射率</p>
 <script type="math/tex; mode=display">
 \zeta^{sca}_n = \frac{T_{11}}{T_{21}}\\
