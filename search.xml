@@ -464,10 +464,9 @@ dp2[i] = max(dp2[i-2] + nums[i], dp2[i-1])\ \ \ \ i < nums.size()-1
 ]]></content>
   </entry>
   <entry>
-    <title></title>
+    <title>数据库系统概论</title>
     <url>/2022/02/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 数据库系统概论</span><br><span class="line">date: 2022-02-23 12:00:00</span><br><span class="line">tags: mysql</span><br><span class="line">mathjax: true</span><br></pre></td></tr></table></figure>
-<h1 id="数据库系统概论"><a href="#数据库系统概论" class="headerlink" title="数据库系统概论"></a>数据库系统概论</h1><p>[TOC]</p>
+    <content><![CDATA[<h1 id="数据库系统概论"><a href="#数据库系统概论" class="headerlink" title="数据库系统概论"></a>数据库系统概论</h1><p>[TOC]</p>
 <h2 id="1-绪论"><a href="#1-绪论" class="headerlink" title="1. 绪论"></a>1. 绪论</h2><h3 id="1-1-数据模型"><a href="#1-1-数据模型" class="headerlink" title="1.1 数据模型"></a>1.1 数据模型</h3><h4 id="1-1-1-数据模型分类"><a href="#1-1-1-数据模型分类" class="headerlink" title="1.1.1 数据模型分类"></a>1.1.1 数据模型分类</h4><ol>
 <li>概念模型：按计算机系统的观点对数据建模，主要用于DBMS的实现</li>
 <li>逻辑模型：按用户的观点对数据进行建模，主要用于数据库设计</li>
@@ -543,5 +542,8 @@ n目关系必有n个属性</script><p><strong>候选码：</strong>关系中的�
 <li>经常更新的列不宜建立聚簇索引</li>
 </ul>
 <h3 id="3-3-数据查询"><a href="#3-3-数据查询" class="headerlink" title="3.3 数据查询"></a>3.3 数据查询</h3>]]></content>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
   </entry>
 </search>

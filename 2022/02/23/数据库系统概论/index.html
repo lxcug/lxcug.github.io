@@ -20,20 +20,21 @@
     var CONFIG = {"hostname":"lxcug.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":-1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="title: 数据库系统概论date: 2022-02-23 12:00:00tags: mysqlmathjax: true 数据库系统概论[TOC] 1. 绪论1.1 数据模型1.1.1 数据模型分类 概念模型：按计算机系统的观点对数据建模，主要用于DBMS的实现 逻辑模型：按用户的观点对数据进行建模，主要用于数据库设计 物理模型：数据在硬件的组织方式  1.1.2 数据模型的组成要素 数据结">
+  <meta name="description" content="数据库系统概论[TOC] 1. 绪论1.1 数据模型1.1.1 数据模型分类 概念模型：按计算机系统的观点对数据建模，主要用于DBMS的实现 逻辑模型：按用户的观点对数据进行建模，主要用于数据库设计 物理模型：数据在硬件的组织方式  1.1.2 数据模型的组成要素 数据结构 数据操作 CRUD $\cdots$  数据的完整性约束条件   1.2 实体-联系模型（概念模型）1.2.1 实体集类似于">
 <meta property="og:type" content="article">
-<meta property="og:title" content="scorpio&#39;s blog">
+<meta property="og:title" content="数据库系统概论">
 <meta property="og:url" content="http://lxcug.github.io/2022/02/23/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/index.html">
 <meta property="og:site_name" content="scorpio&#39;s blog">
-<meta property="og:description" content="title: 数据库系统概论date: 2022-02-23 12:00:00tags: mysqlmathjax: true 数据库系统概论[TOC] 1. 绪论1.1 数据模型1.1.1 数据模型分类 概念模型：按计算机系统的观点对数据建模，主要用于DBMS的实现 逻辑模型：按用户的观点对数据进行建模，主要用于数据库设计 物理模型：数据在硬件的组织方式  1.1.2 数据模型的组成要素 数据结">
+<meta property="og:description" content="数据库系统概论[TOC] 1. 绪论1.1 数据模型1.1.1 数据模型分类 概念模型：按计算机系统的观点对数据建模，主要用于DBMS的实现 逻辑模型：按用户的观点对数据进行建模，主要用于数据库设计 物理模型：数据在硬件的组织方式  1.1.2 数据模型的组成要素 数据结构 数据操作 CRUD $\cdots$  数据的完整性约束条件   1.2 实体-联系模型（概念模型）1.2.1 实体集类似于">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s2.loli.net/2022/02/23/SHMxdYeJcWaC632.png">
 <meta property="og:image" content="https://s2.loli.net/2022/02/23/bCYPvFIfogTpREx.png">
 <meta property="og:image" content="https://s2.loli.net/2022/02/24/FP4MsLCkRtbEqa2.png">
 <meta property="og:image" content="https://s2.loli.net/2022/02/24/ciyhApIWVDTzCMY.png">
-<meta property="article:published_time" content="2022-02-23T07:43:13.191Z">
-<meta property="article:modified_time" content="2022-02-25T01:28:04.622Z">
+<meta property="article:published_time" content="2022-02-23T04:00:00.000Z">
+<meta property="article:modified_time" content="2022-02-25T01:31:04.197Z">
 <meta property="article:author" content="scorpio">
+<meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://s2.loli.net/2022/02/23/SHMxdYeJcWaC632.png">
 
@@ -50,7 +51,7 @@
   };
 </script>
 
-  <title> | scorpio's blog</title>
+  <title>数据库系统概论 | scorpio's blog</title>
   
 
 
@@ -207,7 +208,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          数据库系统概论
         </h1>
 
         <div class="post-meta">
@@ -217,7 +218,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2022-02-23 15:43:13" itemprop="dateCreated datePublished" datetime="2022-02-23T15:43:13+08:00">2022-02-23</time>
+              <time title="创建时间：2022-02-23 12:00:00" itemprop="dateCreated datePublished" datetime="2022-02-23T12:00:00+08:00">2022-02-23</time>
             </span>
 
           <br>
@@ -245,8 +246,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">title: 数据库系统概论</span><br><span class="line">date: 2022-02-23 12:00:00</span><br><span class="line">tags: mysql</span><br><span class="line">mathjax: true</span><br></pre></td></tr></table></figure>
-<h1 id="数据库系统概论"><a href="#数据库系统概论" class="headerlink" title="数据库系统概论"></a>数据库系统概论</h1><p>[TOC]</p>
+        <h1 id="数据库系统概论"><a href="#数据库系统概论" class="headerlink" title="数据库系统概论"></a>数据库系统概论</h1><p>[TOC]</p>
 <h2 id="1-绪论"><a href="#1-绪论" class="headerlink" title="1. 绪论"></a>1. 绪论</h2><h3 id="1-1-数据模型"><a href="#1-1-数据模型" class="headerlink" title="1.1 数据模型"></a>1.1 数据模型</h3><h4 id="1-1-1-数据模型分类"><a href="#1-1-1-数据模型分类" class="headerlink" title="1.1.1 数据模型分类"></a>1.1.1 数据模型分类</h4><ol>
 <li>概念模型：按计算机系统的观点对数据建模，主要用于DBMS的实现</li>
 <li>逻辑模型：按用户的观点对数据进行建模，主要用于数据库设计</li>
@@ -329,6 +329,9 @@ n目关系必有n个属性</script><p><strong>候选码：</strong>关系中的�
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/mysql/" rel="tag"># mysql</a>
+          </div>
 
         
 
@@ -417,6 +420,10 @@ n目关系必有n个属性</script><p><strong>候选码：</strong>关系中的�
           <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
@@ -517,6 +524,59 @@ n目关系必有n个属性</script><p><strong>候选码：</strong>关系中的�
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
